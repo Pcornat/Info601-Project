@@ -1,6 +1,6 @@
 /**
- * The main for the client.
- * @author Florent Denef
+ * The main file for the client.
+ * @authors Florent Denef, Thomas Ducrot
  */
 
 #define _DEFAULT_SOURCE
@@ -28,5 +28,6 @@ int main(int argc, char *argv[])
 	viewerAddress.sin_family = AF_INET;
 	viewerAddress.sin_port = htons(udpPort);
 	error_errno(inet_pton(AF_INET, argv[1], &viewerAddress.sin_addr));
-	error_errno(sockfd = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP)); /* Socket created, now time for work */
+	error_errno(sockfd = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP));
+	/* Socket created, now time for work */
 }
