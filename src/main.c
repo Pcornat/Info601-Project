@@ -4,7 +4,7 @@
  * @version 15/03/2018
  **/
 
-#define _BSD_SOURCE
+#define _DEFAULT_SOURCE
 
 #include <stdlib.h>
 #include <unistd.h>
@@ -49,7 +49,7 @@ int main() {
   scene_t scene;
   int timer = 0;
   int step_time = 100000;
-  int max_timer = 50*1000000;
+  int max_timer = 25*1000000;
   
   /* Initialize the scene and the picture */
   create_scene(&scene);

@@ -2,3 +2,7 @@
 main
 main.exe
 *~
+*.pdf
+.project
+.cproject
+.settings/
