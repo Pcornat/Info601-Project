@@ -3,7 +3,7 @@
 #
 
 EXEC = main
-OBJETS = ncurses.o scene.o
+OBJETS = ncurses.o scene.o tools_error.o
 NOM_PROJET = projet_2017
 
 #
