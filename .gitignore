@@ -7,3 +7,5 @@ main.exe
 .cproject
 .settings/
 src/documentation/
+cmake*
+.idea
