@@ -8,6 +8,8 @@
 #ifndef SRC_CLIENT_CONNECTION_H_
 #define SRC_CLIENT_CONNECTION_H_
 
+#include <stdint.h>
+
 typedef int16_t bool;
 #define true 1
 #define false 0
@@ -15,10 +17,11 @@ typedef int16_t bool;
 /**
  * Contains all of what is necessary to connect to the viewer.
  */
-typedef struct {
-	bool connection = false;
-	int16_t sizeXTerm = 0;
-	int16_t sizeYTerm = 0;
+typedef struct
+{
+	bool connection; /* = false; */
+	int16_t sizeXTerm; /* = 0; */
+	int16_t sizeYTerm; /* = 0; */
 } connection_t;
 
 #endif /* SRC_CLIENT_CONNECTION_H_ */

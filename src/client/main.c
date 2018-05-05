@@ -13,7 +13,7 @@
 #include "../tools_error.h"
 
 /* args : ip_address_from_viewer udp_port tcp_port */
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	int32_t sockfd = 0;
 	int16_t udpPort, tcpPort;

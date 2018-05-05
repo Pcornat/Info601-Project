@@ -1,8 +1,8 @@
 #include "tools_error.h"
 
 #include <stdlib.h>
+#include "ncurse.h"
 #include <ncurses.h>
-#include "ncurses.h"
 
 /**
  * Wrap for checking ncurses errors.
@@ -10,7 +10,7 @@
  * @param return_code the code to check, from the function put à this place.
  * @param message Message to display for the error.
  */
-void ncurses_error_err(int return_code, const char *message)
+void ncurses_error_err(int return_code, const char* message)
 {
 	if (return_code == ERR)
 	{
@@ -26,7 +26,7 @@ void ncurses_error_err(int return_code, const char *message)
  * @param return_ptr Pointer returned from the function.
  * @param message Message to display if there is an error.
  */
-void ncurses_error_null(void *return_ptr, const char *message)
+void ncurses_error_null(void* return_ptr, const char* message)
 {
 	if (return_ptr == NULL)
 	{
